@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: white;
+    font-family: "Montserrat", sans-serif;
+    overflow-x: hidden;
+}
+
+/* ================= HEADER ================= */
+
+.header {
+    width: 90%;
+    height: 75px;
+    margin: 25px auto 0;
+    background: black;
+    border-radius: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 45px;
+    position: relative;
+}
+
+.menu {
+    display: flex;
+    gap: 110px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 900;
+    transition: .3s;
+}
+
+.menu a:hover {
+    color: #df6d8c;
+}
+
+/* ================= LOGO ================= */
+
+.logo {
+    position: absolute;
+    left: 50%;
+    top: -15px;
+    transform: translateX(-50%);
+    z-index: 10;
+    display: block;
+}
+
+.logo img {
+    width: 170px;
+    display: block;
+    transition: .3s;
+}
+
+.logo:hover img {
+    transform: scale(1.05);
+}
+
+/* ================= PAGE ================= */
+
+.page {
+    width: 75%;
+    margin: 85px auto 50px;
+}
+
+/* ================= ONGLETS ================= */
+
+.onglets {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.onglet {
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    color: black;
+    border: 2px solid black;
+    border-bottom: none;
+    border-radius: 18px 18px 0 0;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.actif {
+    background: black;
+    color: white;
+}
+
+/* ================= CONTENEUR ================= */
+
+.conteneur {
+    background: black;
+    padding: 35px;
+    border-radius: 0 0 30px 30px;
+}
+
+/* ================= CARTES ================= */
+
+.carte {
+    width: 92%;
+    height: 400px;
+    margin: 0 auto 35px;
+    background: white;
+    border-radius: 28px;
+}
+
+.carte:last-child {
+    margin-bottom: 0;
+}
+
+/* ================= BOUTON ================= */
+
+.btn-top {
+    width: 60px;
+    height: 60px;
+    margin: 35px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #df6d8c;
+    color: white;
+    text-decoration: none;
+    font-size: 35px;
+    border-radius: 50%;
+    transition: .3s;
+}
+
+.btn-top:hover {
+    transform: translateY(-6px);
+}
+
+.carte{
+    width:92%;
+    height:auto;
+    margin:0 auto 35px;
+    padding:35px;
+    background:white;
+    border-radius:28px;
+}
+
+.carte h2{
+    font-size:28px;
+    margin-bottom:25px;
+}
+
+.projets-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:45px;
+    align-items:start;
+}
+
+.projets-grid.deux{
+    grid-template-columns:repeat(2,1fr);
+    width:70%;
+    margin:0 auto;
+}
+
+.projet{
+    text-align:center;
+}
+
+.projet h3{
+    margin-bottom:15px;
+    font-size:18px;
+}
+
+.projet img{
+    width:180px;
+    height:240px;
+    object-fit:cover;
+    border:2px solid black;
+    border-radius:22px;
+    transition:.3s;
+    cursor:pointer;
+}
+
+.projet img:hover{
+    transform:translateY(-6px) scale(1.03);
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+.projets-grid.un{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+}
