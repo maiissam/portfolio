@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: white;
+    font-family: "Montserrat", sans-serif;
+    overflow-x: hidden;
+}
+
+.header {
+    width: 90%;
+    height: 75px;
+    margin: 25px auto 0;
+    background: black;
+    border-radius: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 45px;
+    position: relative;
+}
+
+.menu {
+    display: flex;
+    gap: 110px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.logo {
+    position: absolute;
+    left: 50%;
+    top: -15px;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.logo img {
+    width: 170px;
+    display: block;
+}
+
+.page {
+    width: 88%;
+    margin: 80px auto 50px;
+}
+
+.onglets {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.onglet {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    color: black;
+    border: 3px solid black;
+    border-bottom: none;
+    border-radius: 22px 22px 0 0;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.onglet.actif {
+    background: black;
+    color: white;
+}
+
+.conteneur {
+    background: #000000;
+    padding: 80px 65px;
+    border-radius: 0 0 35px 35px;
+}
+
+.carte {
+    background: white;
+    border-radius: 35px;
+    padding: 55px;
+}
+
+.carte h1 {
+    font-size: 42px;
+    margin-bottom: 40px;
+}
+
+.comparaison {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr 1fr;
+    gap: 55px;
+    align-items: center;
+}
+
+.projet-img {
+    text-align: center;
+}
+
+.projet-img h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.projet-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 24px;
+}
+
+.projet-img p {
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.texte {
+    font-size: 15px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.texte p {
+    margin-bottom: 15px;
+}
